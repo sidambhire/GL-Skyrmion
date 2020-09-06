@@ -89,8 +89,9 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename Final.jpg
+	filename Workspace/Final.jpg
 	width 80col%
 
 \end_inset
@@ -259,7 +260,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Density-vs-H-T.jpg
+	filename Workspace/Density-vs-H-T.jpg
 	width 80text%
 
 \end_inset
