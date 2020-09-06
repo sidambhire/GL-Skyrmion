@@ -1,0 +1,221 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"SetDirectory", "[",
+  RowBox[{"NotebookDirectory", "[", "]"}], "]"}]], "Input"]
+}]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"\[Theta]h", "[", "x_", "]"}], ":=",
+   RowBox[{"2", "\[Pi]", " ",
+    FractionBox["x", "L"]}]}], ";"}]], "Input"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"mh1", "=",
+   RowBox[{"{",
+    RowBox[{
+     RowBox[{
+      RowBox[{"Cos", "[", "0", "]"}],
+      RowBox[{"Sin", "[",
+       RowBox[{"\[Theta]h", "[", "x", "]"}], "]"}]}], ",",
+     RowBox[{
+      RowBox[{"Sin", "[", "0", "]"}],
+      RowBox[{"Sin", "[",
+       RowBox[{"\[Theta]h", "[", "x", "]"}], "]"}]}], ",",
+     RowBox[{"Cos", "[",
+      RowBox[{"\[Theta]h", "[", "x", "]"}], "]"}]}], "}"}]}],
+  ";"}], "\[IndentingNewLine]",
+ RowBox[{
+  RowBox[{"mh2", "=",
+   RowBox[{"{",
+    RowBox[{
+     RowBox[{
+      RowBox[{"Cos", "[",
+       FractionBox["\[Pi]", "3"], "]"}],
+      RowBox[{"Sin", "[",
+       RowBox[{"\[Theta]h", "[",
+        RowBox[{
+         RowBox[{
+          FractionBox["1", "2"], "x"}], "+",
+         RowBox[{
+          FractionBox[
+           SqrtBox["3"], "2"], "y"}]}], "]"}], "]"}]}], ",",
+     RowBox[{
+      RowBox[{"Sin", "[",
+       FractionBox["\[Pi]", "3"], "]"}],
+      RowBox[{"Sin", "[",
+       RowBox[{"\[Theta]h", "[",
+        RowBox[{
+         RowBox[{
+          FractionBox["1", "2"], "x"}], "+",
+         RowBox[{
+          FractionBox[
+           SqrtBox["3"], "2"], "y"}]}], "]"}], "]"}]}], ",",
+     RowBox[{"Cos", "[",
+      RowBox[{"\[Theta]h", "[",
+       RowBox[{
+        RowBox[{
+         FractionBox["1", "2"], "x"}], "+",
+        RowBox[{
+         FractionBox[
+          SqrtBox["3"], "2"], "y"}]}], "]"}], "]"}]}], "}"}]}],
+  ";"}], "\[IndentingNewLine]",
+ RowBox[{
+  RowBox[{"mh3", "=",
+   RowBox[{"{",
+    RowBox[{
+     RowBox[{
+      RowBox[{"Cos", "[",
+       RowBox[{"-",
+        FractionBox["\[Pi]", "3"]}], "]"}],
+      RowBox[{"Sin", "[",
+       RowBox[{"\[Theta]h", "[",
+        RowBox[{
+         RowBox[{
+          FractionBox["1", "2"], "x"}], "-",
+         RowBox[{
+          FractionBox[
+           SqrtBox["3"], "2"], "y"}]}], "]"}], "]"}]}], ",",
+     RowBox[{
+      RowBox[{"Sin", "[",
+       RowBox[{"-",
+        FractionBox["\[Pi]", "3"]}], "]"}],
+      RowBox[{"Sin", "[",
+       RowBox[{"\[Theta]h", "[",
+        RowBox[{
+         RowBox[{
+          FractionBox["1", "2"], "x"}], "-",
+         RowBox[{
+          FractionBox[
+           SqrtBox["3"], "2"], "y"}]}], "]"}], "]"}]}], ",",
+     RowBox[{"Cos", "[",
+      RowBox[{"\[Theta]h", "[",
+       RowBox[{
+        RowBox[{
+         FractionBox["1", "2"], "x"}], "-",
+        RowBox[{
+         FractionBox[
+          SqrtBox["3"], "2"], "y"}]}], "]"}], "]"}]}], "}"}]}],
+  ";"}], "\[IndentingNewLine]",
+ RowBox[{
+  RowBox[{"mh", "=",
+   RowBox[{"mh1", "+", "mh2", "+", "mh3"}]}], ";"}]}], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"l", "=", "1"}], "\[IndentingNewLine]",
+ RowBox[{
+  RowBox[{"pts", "=",
+   RowBox[{
+    RowBox[{"Flatten", "[",
+     RowBox[{
+      RowBox[{"Table", "[",
+       RowBox[{
+        RowBox[{"Table", "[",
+         RowBox[{
+          RowBox[{"{",
+           RowBox[{
+            RowBox[{
+             RowBox[{"j", " ", "l"}], "+",
+             RowBox[{"r", " ",
+              RowBox[{"Cos", "[", "\[Theta]", "]"}]}]}], ",", " ",
+            RowBox[{
+             RowBox[{
+              FractionBox[
+               RowBox[{"(",
+                RowBox[{
+                 RowBox[{"2", "i"}], "+", "j"}], ")"}],
+               SqrtBox["3"]], "l"}], "+",
+             RowBox[{"r", " ",
+              RowBox[{"Sin", "[", "\[Theta]", "]"}]}]}], ",", "0"}], "}"}],
+          ",",
+          RowBox[{"{",
+           RowBox[{"r", ",", "0", ",", "l", ",", "0.1"}], "}"}], ",",
+          RowBox[{"{",
+           RowBox[{"\[Theta]", ",",
+            RowBox[{"-", "\[Pi]"}], ",", "\[Pi]", ",",
+            FractionBox["\[Pi]", "18"]}], "}"}]}], "]"}], ",",
+        RowBox[{"{",
+         RowBox[{"i", ",",
+          RowBox[{"-", "2"}], ",", "2"}], "}"}], ",",
+        RowBox[{"{",
+         RowBox[{"j", ",",
+          RowBox[{"-", "2"}], ",", "2"}], "}"}]}], "]"}], ",", "3"}], "]"}], "//",
+     "DeleteDuplicates"}]}], ";"}]}], "Input"]
+}]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"A", "=",
+  RowBox[{"VectorPlot3D", "[",
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", "mh"}], "/.",
+     RowBox[{"L", "\[Rule]", " ", "1"}]}], ",",
+    RowBox[{"{",
+     RowBox[{"x", ",",
+      RowBox[{"-", "l"}], ",",
+      RowBox[{"3", "l"}]}], "}"}], ",",
+    RowBox[{"{",
+     RowBox[{"y", ",",
+      RowBox[{"-", "l"}], ",",
+      RowBox[{"3", "l"}]}], "}"}], ",",
+    RowBox[{"{",
+     RowBox[{"z", ",",
+      RowBox[{
+       RowBox[{"-", "3"}], "l"}], ",",
+      RowBox[{"3", "l"}]}], "}"}], ",",
+    RowBox[{"PlotRange", "\[Rule]",
+     RowBox[{"{",
+      RowBox[{
+       RowBox[{"{",
+        RowBox[{
+         RowBox[{"-", "l"}], ",",
+         RowBox[{"3", "l"}]}], "}"}], ",",
+       RowBox[{"{",
+        RowBox[{
+         RowBox[{"-", "l"}], ",",
+         RowBox[{"3", "l"}]}], "}"}], ",",
+       RowBox[{"{",
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "3"}], "l"}], ",",
+         RowBox[{"3", "l"}]}], "}"}]}], "}"}]}], ",",
+    RowBox[{"VectorPoints", "\[Rule]", "pts"}], ",",
+    RowBox[{"VectorSizes", "\[Rule]", "0.8"}], ",",
+    RowBox[{"VectorAspectRatio", "\[Rule]", "0.3"}], ",",
+    RowBox[{"VectorColorFunction", "\[Rule]",
+     RowBox[{"Function", "[",
+      RowBox[{
+       RowBox[{"{",
+        RowBox[{
+        "x", ",", "y", ",", "z", ",", "vx", ",", "vy", ",", "vz", ",", "n"}],
+        "}"}], ",",
+       RowBox[{
+        RowBox[{"ColorData", "[",
+         RowBox[{"{",
+          RowBox[{"\"\<TemperatureMap\>\"", ",", "\"\<Reverse\>\""}], "}"}],
+         "]"}], "[", "vz", "]"}]}], "]"}]}], ",",
+    RowBox[{"Boxed", "\[Rule]", "False"}], ",",
+    RowBox[{"Axes", "\[Rule]", "False"}], ",",
+    RowBox[{"ImageSize", "\[Rule]", "Full"}]}], "]"}]}]], "Input"]
+}]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[",
+  RowBox[{"\"\<Skyrmion-lattice-Schematic.jpg\>\"", ",", "A"}],
+  "]"}]], "Input"]
+}]]
+}]
+(* End of Notebook Content *)

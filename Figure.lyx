@@ -1,0 +1,387 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5cm
+\topmargin 1.5cm
+\rightmargin 1.5cm
+\bottommargin 1.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Final.jpg
+	width 80col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+In the green region uniform phase has minimum free energy, in blue region
+ free energy of Skyrmion buble with uniform phase surrounding the buble
+ has minimum free energy and in orange region helical phase has least free
+ energy.
+ This figure was obtained by Free energy calculations using following parameters
+: 
+\begin_inset Formula $D_{0}=0.006\,J/m^{3}$
+\end_inset
+
+,
+\begin_inset Formula $T_{c}=270K$
+\end_inset
+
+, 
+\begin_inset Formula $M_{0}=362\,\text{emu}/\text{cm}^{3}$
+\end_inset
+
+,
+\begin_inset Formula $k_{d}=2.62\times10^{5}J/m^{3}$
+\end_inset
+
+,
+\begin_inset Formula $k_{u}=3.16\times10^{5}J/m^{3}$
+\end_inset
+
+,
+\begin_inset Formula $A_{\text{ex}}=6.5\times10^{-11}J/m$
+\end_inset
+
+, and 
+\begin_inset Formula $n=2$
+\end_inset
+
+.
+ The figure was obtained for various profiles of magnetization field for
+ the Skyrmion phase which are overlaid on top of each other.
+ We approximated the Skyrmion bubble profile
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zhang2018,DeBonte1973"
+literal "false"
+
+\end_inset
+
+ by linear piecewise functions with values 
+\begin_inset Formula $\left\{ \pi,\theta_{sk}\left(r\right),0\right\} $
+\end_inset
+
+ for inside domain wall, on the domian wall, and outside domain wall respectivel
+y, with 
+\begin_inset Formula $\theta_{sk}\left(r\right)=\frac{\pi(R(a+2b)-2r)}{2aR}$
+\end_inset
+
+.
+ The various profile used for obtaing the graph have domain wall width 
+\begin_inset Formula $a=0.9$
+\end_inset
+
+ and domain wall positions 
+\begin_inset Formula $b=\left\{ 0.55,0.53,0.51,0.49,0.47,0.45\right\} $
+\end_inset
+
+ which are fractions of Skyrmion radius.
+ The dearkest blue part of the Skyrmion phase (innermost) corresponds to
+ 
+\begin_inset Formula $b=0.45$
+\end_inset
+
+ and the outermost part (light blue) corresponds to 
+\begin_inset Formula $b=0.55$
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Phase-diagram"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Following equations were used to calculate the free energies:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+F_{\text{sk}} & = & \frac{1}{S}\left(A_{ex}\left(\nabla\cdot\boldsymbol{M}_{sk}\right)^{2}-M_{0}\boldsymbol{M}_{sk}\cdot\boldsymbol{H}+\left(k_{d}-k_{u}\right)\left(\boldsymbol{M}_{sk}\cdot\hat{\boldsymbol{z}}\right)^{2}\right.\\
+ &  & \left.+D_{0}\left(1-\left(\frac{T}{T_{c}}\right)^{3/2}\right)^{n}\sum_{i=1}^{2}\left(\hat{\boldsymbol{z}}\times\hat{\boldsymbol{x}}_{i}\right)\cdot\left(\boldsymbol{M}_{sk}\times\frac{\partial\boldsymbol{M}_{sk}}{\partial x_{i}}\right)\right)\\
+F_{h} & = & \frac{1}{L}\left(A_{ex}\left(\nabla\cdot\boldsymbol{M}_{h}\right)^{2}-M_{0}\boldsymbol{M}_{h}\cdot\boldsymbol{H}+\left(k_{d}-k_{u}\right)\left(\boldsymbol{M}_{h}\cdot\hat{\boldsymbol{z}}\right)^{2}\right.\\
+ &  & \left.+D_{0}\left(1-\left(\frac{T}{T_{c}}\right)^{3/2}\right)^{n}\sum_{i=1}^{2}\left(\hat{\boldsymbol{z}}\times\hat{\boldsymbol{x}}_{i}\right)\cdot\left(\boldsymbol{M}_{h}\times\frac{\partial\boldsymbol{M}_{h}}{\partial x_{i}}\right)\right)\\
+F_{u} & = & \frac{1}{S}\left(A_{ex}\left(\nabla\cdot\boldsymbol{M}_{u}\right)^{2}-M_{0}\boldsymbol{M}_{u}\cdot\boldsymbol{H}+\left(k_{d}-k_{u}\right)\left(\boldsymbol{M}_{u}\cdot\hat{\boldsymbol{z}}\right)^{2}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\boldsymbol{M}_{sk} & = & \left(1-\left(\frac{T}{T_{c}}\right)^{3/2}\right)\left(\cos(\phi)\sin(\theta_{sk}(r)),\sin(\phi)\sin(\theta_{sk}(r)),\cos(\theta_{sk}(r))\right)\\
+\boldsymbol{M}_{h} & = & \left(1-\left(\frac{T}{T_{c}}\right)^{3/2}\right)\left(\sin(\theta_{h}(x)),0,\cos(\theta_{h}(x))\right)\\
+\boldsymbol{M}_{u} & = & \left(1-\left(\frac{T}{T_{c}}\right)^{3/2}\right)\left(m_{x},m_{y},m_{z}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The free energies listed above were calcualted for per unit cell of the
+ periodic structure.
+ The free energies were minimized with respect to the lattice parameters
+ for each case.
+ The free energy of the Skyrmion bubble was added to the free energy of
+ uniformaly magnetized state for a hexagonal lattice with weighing fractions
+ proportional to areas covered by the phases (
+\begin_inset Formula $\frac{\pi}{2\sqrt{3}}$
+\end_inset
+
+and 
+\begin_inset Formula $1-\frac{\pi}{2\sqrt{3}}$
+\end_inset
+
+ for Skyrmion and uniformly magnetized phase respectively).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Density-vs-H-T.jpg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Figure shows 
+\begin_inset Formula $\rho\text{sig}\left(H\right)$
+\end_inset
+
+, where 
+\begin_inset Formula $\rho$
+\end_inset
+
+ is the number density of Skyrmions given by 
+\begin_inset Formula $\left(\pi R^{2}\right)^{-1}$
+\end_inset
+
+, 
+\begin_inset Formula $H$
+\end_inset
+
+ is the magnetic field, 
+\begin_inset Formula $R$
+\end_inset
+
+ is the radius of Skyrmion, and 
+\begin_inset Formula $\text{sig}\left(x\right)$
+\end_inset
+
+ is the sign function.
+ The radius was obtained by minimizing the free energy of the Skyrmion phase.
+ This figure was obtained by Free energy calculations using following parameters
+: 
+\begin_inset Formula $D_{0}=0.006\,J/m^{3}$
+\end_inset
+
+,
+\begin_inset Formula $T_{c}=270K$
+\end_inset
+
+, 
+\begin_inset Formula $M_{0}=362\,\text{emu}/\text{cm}^{3}$
+\end_inset
+
+,
+\begin_inset Formula $k_{d}=2.62\times10^{5}J/m^{3}$
+\end_inset
+
+,
+\begin_inset Formula $k_{u}=3.16\times10^{5}J/m^{3}$
+\end_inset
+
+,
+\begin_inset Formula $A_{\text{ex}}=6.5\times10^{-11}J/m$
+\end_inset
+
+, and 
+\begin_inset Formula $n=2$
+\end_inset
+
+.
+ The figure was obtained for the magnetization profile given by linear piecewise
+ functions with values 
+\begin_inset Formula $\left\{ \pi,\theta_{sk}\left(r\right),0\right\} $
+\end_inset
+
+, with 
+\begin_inset Formula $\theta_{sk}\left(r\right)=\frac{\pi(R(a+2b)-2r)}{2aR}$
+\end_inset
+
+, which was also used in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Phase-diagram"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, with 
+\begin_inset Formula $a=0.5$
+\end_inset
+
+ and 
+\begin_inset Formula $b=0.55$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "ref"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

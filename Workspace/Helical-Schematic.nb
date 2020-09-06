@@ -1,0 +1,100 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"SetDirectory", "[",
+  RowBox[{"NotebookDirectory", "[", "]"}], "]"}]], "Input"]
+}]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"\[Theta]h", "[", "x_", "]"}], ":=",
+   RowBox[{"2", "\[Pi]", " ",
+    FractionBox["x", "L"]}]}], ";"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"mh", "=",
+   RowBox[{"{",
+    RowBox[{
+     RowBox[{"Sin", "[",
+      RowBox[{"\[Theta]h", "[", "x", "]"}], "]"}], ",", "0", ",",
+     RowBox[{"Cos", "[",
+      RowBox[{"\[Theta]h", "[", "x", "]"}], "]"}]}], "}"}]}], ";"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"l", "=", "1"}], "\[IndentingNewLine]",
+ RowBox[{
+  RowBox[{"pts", "=",
+   RowBox[{"Flatten", "[",
+    RowBox[{
+     RowBox[{"Table", "[",
+      RowBox[{
+       RowBox[{"{",
+        RowBox[{"x", ",", "y", ",", "0"}], "}"}], ",",
+       RowBox[{"{",
+        RowBox[{"x", ",", "0", ",", "l", ",", "0.1"}], "}"}], ",",
+       RowBox[{"{",
+        RowBox[{"y", ",", "0", ",", "l", ",", "0.1"}], "}"}], ",",
+       RowBox[{"{",
+        RowBox[{"z", ",",
+         RowBox[{"-", "1"}], ",", "1", ",", "0.1"}], "}"}]}], "]"}], ",",
+     "2"}], "]"}]}], ";"}]}], "Input"]
+}]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"A", "=",
+  RowBox[{"VectorPlot3D", "[",
+   RowBox[{
+    RowBox[{"mh", "/.",
+     RowBox[{"L", "\[Rule]", " ", "l"}]}], ",",
+    RowBox[{"{",
+     RowBox[{"x", ",", "0", ",", "l"}], "}"}], ",",
+    RowBox[{"{",
+     RowBox[{"y", ",", "0", ",", "l"}], "}"}], ",",
+    RowBox[{"{",
+     RowBox[{"z", ",",
+      RowBox[{"-", "0.1"}], ",", "0.1"}], "}"}], ",",
+    RowBox[{"VectorPoints", "\[Rule]", "pts"}], ",",
+    RowBox[{"PlotRange", "\[Rule]",
+     RowBox[{"{",
+      RowBox[{"All", ",", "All", ",", "All"}], "}"}]}], ",",
+    RowBox[{"VectorSizes", "\[Rule]", "2"}], ",",
+    RowBox[{"VectorAspectRatio", "\[Rule]", "0.2"}], ",", " ",
+    RowBox[{"VectorColorFunction", "\[Rule]",
+     RowBox[{"Function", "[",
+      RowBox[{
+       RowBox[{"{",
+        RowBox[{
+        "x", ",", "y", ",", "z", ",", "vx", ",", "vy", ",", "vz", ",", "n"}],
+        "}"}], ",",
+       RowBox[{
+        RowBox[{"ColorData", "[",
+         RowBox[{"{",
+          RowBox[{"\"\<TemperatureMap\>\"", ",", "\"\<Reverse\>\""}], "}"}],
+         "]"}], "[", "vz", "]"}]}], "]"}]}], ",",
+    RowBox[{"Boxed", "\[Rule]", "False"}], ",",
+    RowBox[{"Axes", "\[Rule]", "False"}], ",",
+    RowBox[{"ViewPoint", "\[Rule]",
+     RowBox[{"{",
+      RowBox[{
+       RowBox[{"-", "0.1"}], ",", " ", "2", ",", " ", "0.5"}], "}"}]}]}],
+   "]"}]}]], "Input"]
+}]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[",
+  RowBox[{"\"\<Helical-Schematic.jpg\>\"", ",", "A"}], "]"}]], "Input"]
+}]]
+}]
+(* End of Notebook Content *)
