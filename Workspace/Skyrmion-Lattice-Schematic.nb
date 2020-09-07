@@ -207,7 +207,10 @@ Cell[BoxData[
          "]"}], "[", "vz", "]"}]}], "]"}]}], ",",
     RowBox[{"Boxed", "\[Rule]", "False"}], ",",
     RowBox[{"Axes", "\[Rule]", "False"}], ",",
-    RowBox[{"ImageSize", "\[Rule]", "Full"}]}], "]"}]}]], "Input"]
+    RowBox[{"ImageSize", "\[Rule]", "Full"}], ",",
+    RowBox[{"PlotLabel", "\[Rule]",
+     RowBox[{"Style", "[",
+      RowBox[{"\"\<SkX Lattice\>\"", ",", "32"}], "]"}]}]}], "]"}]}]], "Input"]
 }]],
 
 Cell[CellGroupData[{

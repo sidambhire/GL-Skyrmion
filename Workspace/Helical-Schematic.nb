@@ -81,13 +81,16 @@ Cell[BoxData[
          RowBox[{"{",
           RowBox[{"\"\<TemperatureMap\>\"", ",", "\"\<Reverse\>\""}], "}"}],
          "]"}], "[", "vz", "]"}]}], "]"}]}], ",",
+    RowBox[{"ImageSize", "\[Rule]", " ", "Full"}], ",",
     RowBox[{"Boxed", "\[Rule]", "False"}], ",",
     RowBox[{"Axes", "\[Rule]", "False"}], ",",
     RowBox[{"ViewPoint", "\[Rule]",
      RowBox[{"{",
       RowBox[{
-       RowBox[{"-", "0.1"}], ",", " ", "2", ",", " ", "0.5"}], "}"}]}]}],
-   "]"}]}]], "Input"]
+       RowBox[{"-", "0.1"}], ",", " ", "2", ",", " ", "0.5"}], "}"}]}], ",",
+    RowBox[{"PlotLabel", "\[Rule]",
+     RowBox[{"Style", "[",
+      RowBox[{"\"\<Helix cell\>\"", ",", "32"}], "]"}]}]}], "]"}]}]], "Input"]
 }]],
 
 Cell[CellGroupData[{

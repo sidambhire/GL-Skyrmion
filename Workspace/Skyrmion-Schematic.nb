@@ -176,7 +176,11 @@ Cell[BoxData[
           RowBox[{"\"\<TemperatureMap\>\"", ",", "\"\<Reverse\>\""}], "}"}],
          "]"}], "[", "vz", "]"}]}], "]"}]}], ",",
     RowBox[{"Boxed", "\[Rule]", "False"}], ",",
-    RowBox[{"Axes", "\[Rule]", "False"}]}], "]"}]}]], "Input"]
+    RowBox[{"Axes", "\[Rule]", "False"}], ",",
+    RowBox[{"ImageSize", "\[Rule]", " ", "Full"}], ",",
+    RowBox[{"PlotLabel", "\[Rule]",
+     RowBox[{"Style", "[",
+      RowBox[{"\"\<Single SkX\>\"", ",", "32"}], "]"}]}]}], "]"}]}]], "Input"]
 }]],
 
 Cell[CellGroupData[{
