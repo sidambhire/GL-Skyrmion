@@ -971,24 +971,12 @@ Cell[BoxData[{
      RowBox[{"{",
       RowBox[{"\"\<T (K)\>\"", ",", "\"\<H (kOe)\>\""}], "}"}]}], ",",
     RowBox[{"ImageSize", "\[Rule]", "Large"}], ",",
-    RowBox[{"ColorFunction", "\[Rule]",
-     RowBox[{"(",
-      RowBox[{
-       RowBox[{"Blend", "[",
-        RowBox[{
-         RowBox[{"{",
-          RowBox[{
-          "Blue", ",", "Cyan", ",", "Green", ",", "Brown", ",", "Red"}],
-          "}"}], ",", "#"}], "]"}], "&"}], ")"}]}], ",",
+    RowBox[{"ColorFunction", "\[Rule]", "\"\<BlueGreenYellow\>\""}], ",",
+    RowBox[{"LabelStyle", "\[Rule]", "Large"}], ",", " ",
     RowBox[{"ScalingFunctions", "\[Rule]",
      RowBox[{"{",
-      RowBox[{"Identity", ",", "\"\<Reverse\>\"", ",", "Identity"}], "}"}]}],
-    ",",
-    RowBox[{"TargetUnits", "\[Rule]",
-     RowBox[{"1", "/",
-      RowBox[{"(",
-       RowBox[{"\"\<Meters\>\"", "*", "\"\<Meters\>\""}], ")"}]}]}]}],
-   "]"}]}]}], "Input"]
+      RowBox[{"Identity", ",", "\"\<Reverse\>\"", ",", "Identity"}],
+      "}"}]}]}], "]"}]}]}], "Input"]
 }]],
 
 Cell[CellGroupData[{
