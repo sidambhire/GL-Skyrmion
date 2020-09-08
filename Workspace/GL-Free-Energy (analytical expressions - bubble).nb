@@ -971,7 +971,15 @@ Cell[BoxData[{
      RowBox[{"{",
       RowBox[{"\"\<T (K)\>\"", ",", "\"\<H (kOe)\>\""}], "}"}]}], ",",
     RowBox[{"ImageSize", "\[Rule]", "Large"}], ",",
-    RowBox[{"ColorFunction", "\[Rule]", "\"\<BlueGreenYellow\>\""}], ",",
+    RowBox[{"ColorFunction", "\[Rule]",
+     RowBox[{"(",
+      RowBox[{
+       RowBox[{"Blend", "[",
+        RowBox[{
+         RowBox[{"{",
+          RowBox[{
+          "Blue", ",", "Cyan", ",", "Green", ",", "Yellow", ",", "Red"}],
+          "}"}], ",", "#"}], "]"}], "&"}], ")"}]}], ",",
     RowBox[{"LabelStyle", "\[Rule]", "Large"}], ",", " ",
     RowBox[{"ScalingFunctions", "\[Rule]",
      RowBox[{"{",

@@ -156,61 +156,63 @@ Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"A", "=",
-  RowBox[{"VectorPlot3D", "[",
+  RowBox[{"Labeled", "[",
    RowBox[{
-    RowBox[{
-     RowBox[{"-", "mh"}], "/.",
-     RowBox[{"L", "\[Rule]", " ", "1"}]}], ",",
-    RowBox[{"{",
-     RowBox[{"x", ",",
-      RowBox[{"-", "l"}], ",",
-      RowBox[{"3", "l"}]}], "}"}], ",",
-    RowBox[{"{",
-     RowBox[{"y", ",",
-      RowBox[{"-", "l"}], ",",
-      RowBox[{"3", "l"}]}], "}"}], ",",
-    RowBox[{"{",
-     RowBox[{"z", ",",
+    RowBox[{"VectorPlot3D", "[",
+     RowBox[{
       RowBox[{
-       RowBox[{"-", "3"}], "l"}], ",",
-      RowBox[{"3", "l"}]}], "}"}], ",",
-    RowBox[{"PlotRange", "\[Rule]",
-     RowBox[{"{",
-      RowBox[{
+       RowBox[{"-", "mh"}], "/.",
+       RowBox[{"L", "\[Rule]", " ", "1"}]}], ",",
+      RowBox[{"{",
+       RowBox[{"x", ",",
+        RowBox[{"-", "l"}], ",",
+        RowBox[{"3", "l"}]}], "}"}], ",",
+      RowBox[{"{",
+       RowBox[{"y", ",",
+        RowBox[{"-", "l"}], ",",
+        RowBox[{"3", "l"}]}], "}"}], ",",
+      RowBox[{"{",
+       RowBox[{"z", ",",
+        RowBox[{
+         RowBox[{"-", "3"}], "l"}], ",",
+        RowBox[{"3", "l"}]}], "}"}], ",",
+      RowBox[{"PlotRange", "\[Rule]",
        RowBox[{"{",
         RowBox[{
-         RowBox[{"-", "l"}], ",",
-         RowBox[{"3", "l"}]}], "}"}], ",",
-       RowBox[{"{",
-        RowBox[{
-         RowBox[{"-", "l"}], ",",
-         RowBox[{"3", "l"}]}], "}"}], ",",
-       RowBox[{"{",
-        RowBox[{
-         RowBox[{
-          RowBox[{"-", "3"}], "l"}], ",",
-         RowBox[{"3", "l"}]}], "}"}]}], "}"}]}], ",",
-    RowBox[{"VectorPoints", "\[Rule]", "pts"}], ",",
-    RowBox[{"VectorSizes", "\[Rule]", "0.8"}], ",",
-    RowBox[{"VectorAspectRatio", "\[Rule]", "0.3"}], ",",
-    RowBox[{"VectorColorFunction", "\[Rule]",
-     RowBox[{"Function", "[",
-      RowBox[{
-       RowBox[{"{",
-        RowBox[{
-        "x", ",", "y", ",", "z", ",", "vx", ",", "vy", ",", "vz", ",", "n"}],
-        "}"}], ",",
-       RowBox[{
-        RowBox[{"ColorData", "[",
          RowBox[{"{",
-          RowBox[{"\"\<TemperatureMap\>\"", ",", "\"\<Reverse\>\""}], "}"}],
-         "]"}], "[", "vz", "]"}]}], "]"}]}], ",",
-    RowBox[{"Boxed", "\[Rule]", "False"}], ",",
-    RowBox[{"Axes", "\[Rule]", "False"}], ",",
-    RowBox[{"ImageSize", "\[Rule]", "Full"}], ",",
-    RowBox[{"PlotLabel", "\[Rule]",
-     RowBox[{"Style", "[",
-      RowBox[{"\"\<SkX Lattice\>\"", ",", "32"}], "]"}]}]}], "]"}]}]], "Input"]
+          RowBox[{
+           RowBox[{"-", "l"}], ",",
+           RowBox[{"3", "l"}]}], "}"}], ",",
+         RowBox[{"{",
+          RowBox[{
+           RowBox[{"-", "l"}], ",",
+           RowBox[{"3", "l"}]}], "}"}], ",",
+         RowBox[{"{",
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "3"}], "l"}], ",",
+           RowBox[{"3", "l"}]}], "}"}]}], "}"}]}], ",",
+      RowBox[{"VectorPoints", "\[Rule]", "pts"}], ",",
+      RowBox[{"VectorSizes", "\[Rule]", "0.8"}], ",",
+      RowBox[{"VectorAspectRatio", "\[Rule]", "0.3"}], ",",
+      RowBox[{"VectorColorFunction", "\[Rule]",
+       RowBox[{"Function", "[",
+        RowBox[{
+         RowBox[{"{",
+          RowBox[{
+          "x", ",", "y", ",", "z", ",", "vx", ",", "vy", ",", "vz", ",",
+           "n"}], "}"}], ",",
+         RowBox[{
+          RowBox[{"ColorData", "[",
+           RowBox[{"{",
+            RowBox[{"\"\<TemperatureMap\>\"", ",", "\"\<Reverse\>\""}], "}"}],
+            "]"}], "[", "vz", "]"}]}], "]"}]}], ",",
+      RowBox[{"Boxed", "\[Rule]", "False"}], ",",
+      RowBox[{"Axes", "\[Rule]", "False"}], ",",
+      RowBox[{"ImageSize", "\[Rule]", "Full"}]}], "]"}], ",",
+    RowBox[{"Style", "[",
+     RowBox[{"\"\<Skyrmion Lattice(SkX)\>\"", ",", "48"}], "]"}]}],
+   "]"}]}]], "Input"]
 }]],
 
 Cell[CellGroupData[{
