@@ -144,7 +144,7 @@ Cell[BoxData[{
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"A", "=",
+ RowBox[{"S", "=",
   RowBox[{"Labeled", "[",
    RowBox[{
     RowBox[{"VectorPlot3D", "[",
@@ -188,7 +188,7 @@ Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"Export", "[",
-  RowBox[{"\"\<Skyrmion-Schematic.jpg\>\"", ",", "A"}], "]"}]], "Input"]
+  RowBox[{"\"\<Skyrmion-Schematic.jpg\>\"", ",", "S"}], "]"}]], "Input"]
 }]]
 }]
 (* End of Notebook Content *)

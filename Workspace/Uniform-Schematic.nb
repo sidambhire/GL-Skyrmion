@@ -11,20 +11,9 @@ Cell[BoxData[
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{
-   RowBox[{"\[Theta]h", "[", "x_", "]"}], ":=",
-   RowBox[{"2", "\[Pi]", " ",
-    FractionBox["x", "L"]}]}], ";"}]], "Input"],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"mh", "=",
+  RowBox[{"mu", "=",
    RowBox[{"{",
-    RowBox[{
-     RowBox[{"Sin", "[",
-      RowBox[{"\[Theta]h", "[", "x", "]"}], "]"}], ",", "0", ",",
-     RowBox[{"Cos", "[",
-      RowBox[{"\[Theta]h", "[", "x", "]"}], "]"}]}], "}"}]}], ";"}]], "Input"],
+    RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], ";"}]], "Input"],
 
 Cell[CellGroupData[{
 
@@ -52,11 +41,9 @@ Cell[CellGroupData[{
 
 Cell[BoxData[{
  RowBox[{
-  RowBox[{"H", "=",
+  RowBox[{"U", "=",
    RowBox[{"VectorPlot3D", "[",
-    RowBox[{
-     RowBox[{"mh", "/.",
-      RowBox[{"L", "\[Rule]", " ", "l"}]}], ",",
+    RowBox[{"mu", ",",
      RowBox[{"{",
       RowBox[{"x", ",", "0", ",", "l"}], "}"}], ",",
      RowBox[{"{",
@@ -78,10 +65,8 @@ Cell[BoxData[{
          "x", ",", "y", ",", "z", ",", "vx", ",", "vy", ",", "vz", ",", "n"}],
           "}"}], ",",
         RowBox[{
-         RowBox[{"ColorData", "[",
-          RowBox[{"{",
-           RowBox[{"\"\<TemperatureMap\>\"", ",", "\"\<Reverse\>\""}], "}"}],
-          "]"}], "[", "vz", "]"}]}], "]"}]}], ",",
+         RowBox[{"ColorData", "[", "\"\<TemperatureMap\>\"", "]"}], "[", "vz",
+          "]"}]}], "]"}]}], ",",
      RowBox[{"ImageSize", "\[Rule]", " ", "300"}], ",",
      RowBox[{"Boxed", "\[Rule]", "False"}], ",",
      RowBox[{"Axes", "\[Rule]", "False"}], ",",
@@ -90,16 +75,17 @@ Cell[BoxData[{
        RowBox[{
         RowBox[{"-", "0.1"}], ",", " ", "2", ",", " ", "0.5"}], "}"}]}]}],
     "]"}]}], ";"}], "\[IndentingNewLine]",
- RowBox[{"H", "=",
+ RowBox[{"U", "=",
   RowBox[{"Panel", "[",
-   RowBox[{"H", ",",
+   RowBox[{"U", ",",
     RowBox[{"Style", "[",
-     RowBox[{"\"\<Helix cell\>\"", ",", "\"\<Text\>\""}], "]"}], ",",
+     RowBox[{"\"\<Uniform magnetization\>\"", ",", "\"\<Text\>\""}], "]"}],
+    ",",
     RowBox[{"{",
      RowBox[{"{",
       RowBox[{"Bottom", ",", "Center"}], "}"}], "}"}], ",",
-    RowBox[{"Appearance", "\[Rule]", "\"\<Frameless\>\""}], ",",
     RowBox[{"BaselinePosition", "\[Rule]", "Center"}], ",",
+    RowBox[{"Appearance", "\[Rule]", "\"\<Frameless\>\""}], ",",
     RowBox[{"Background", "\[Rule]", "White"}]}], "]"}]}]}], "Input"]
 }]],
 
@@ -107,7 +93,7 @@ Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"Export", "[",
-  RowBox[{"\"\<Helical-Schematic.jpg\>\"", ",", "H"}], "]"}]], "Input"]
+  RowBox[{"\"\<Uniform-Schematic.jpg\>\"", ",", "U"}], "]"}]], "Input"]
 }]]
 }]
 (* End of Notebook Content *)

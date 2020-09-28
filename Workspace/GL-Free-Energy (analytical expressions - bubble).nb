@@ -959,8 +959,8 @@ Cell[BoxData[{
          RowBox[{"LegendMarkerSize", "\[Rule]", "150"}], ",",
          RowBox[{
          "LegendLabel", "\[Rule]",
-          "\"\<Density (\!\(\*SuperscriptBox[\(\[Mu]m\), \(-2\)]\))\>\""}]}],
-        "]"}], ",",
+          "\"\<Skyrmion Density (\!\(\*SuperscriptBox[\(\[Mu]m\), \
+\(-2\)]\))\>\""}]}], "]"}], ",",
        RowBox[{"{",
         RowBox[{"After", ",", "Top"}], "}"}]}], "]"}]}], ",",
     RowBox[{"AxesOrigin", "\[Rule]",

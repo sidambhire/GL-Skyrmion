@@ -1,0 +1,60 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"SetDirectory", "[",
+  RowBox[{"NotebookDirectory", "[", "]"}], "]"}]], "Input"]
+}]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"NotebookEvaluate", "[",
+  "\"\</home/sid/Academics/Case Western Reserve \
+University/Projects/GL-Skyrmion/Workspace/Helical-Schematic.nb\>\"",
+  "]"}], "\[IndentingNewLine]",
+ RowBox[{"NotebookEvaluate", "[",
+  "\"\</home/sid/Academics/Case Western Reserve \
+University/Projects/GL-Skyrmion/Workspace/Skyrmion-Lattice-Schematic.nb\>\"",
+  "]"}], "\[IndentingNewLine]",
+ RowBox[{"NotebookEvaluate", "[",
+  "\"\</home/sid/Academics/Case Western Reserve \
+University/Projects/GL-Skyrmion/Workspace/Uniform-Schematic.nb\>\"",
+  "]"}]}], "Input"]
+}]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"arrow", "=",
+   RowBox[{"Graphics", "[",
+    RowBox[{
+     RowBox[{"Text", "@",
+      RowBox[{"Style", "[",
+       RowBox[{"\"\<\[RightArrow]\>\"", ",", "32", ",", "Bold"}], "]"}]}],
+     ",",
+     RowBox[{"BaselinePosition", "\[Rule]", "Center"}], ",",
+     RowBox[{"ImageSize", "\[Rule]", "50"}]}], "]"}]}], ";"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"A", "=",
+  RowBox[{"Row", "[",
+   RowBox[{
+    RowBox[{"{",
+     RowBox[{"H", ",", "Sl", ",", "U"}], "}"}], ",", "arrow", ",",
+    RowBox[{"BaselinePosition", "\[Rule]", "Center"}], ",",
+    RowBox[{"ImageSize", "\[Rule]", "1100"}]}], "]"}]}]], "Input"]
+}]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[",
+  RowBox[{"\"\<Lattices.jpg\>\"", ",", "A"}], "]"}]], "Input"]
+}]]
+}]
+(* End of Notebook Content *)
