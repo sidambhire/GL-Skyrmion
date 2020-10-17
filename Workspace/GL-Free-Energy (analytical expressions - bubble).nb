@@ -147,6 +147,26 @@ Cell[BoxData[{
 
 Cell[CellGroupData[{
 
+Cell[BoxData[
+ RowBox[{"Plot", "[",
+  RowBox[{
+   RowBox[{"Table", "[",
+    RowBox[{
+     RowBox[{
+      RowBox[{"\[Theta]sk", "[", "r", "]"}], "/.",
+      RowBox[{"{",
+       RowBox[{
+        RowBox[{"R", "\[Rule]", "1"}], ",",
+        RowBox[{"a", "\[Rule]", "0.9"}]}], "}"}]}], ",",
+     RowBox[{"{",
+      RowBox[{"b", ",", "0.45", ",", "0.55", ",", "0.02"}], "}"}]}], "]"}],
+   ",",
+   RowBox[{"{",
+    RowBox[{"r", ",", "0", ",", "1"}], "}"}]}], "]"}]], "Input"]
+}]],
+
+Cell[CellGroupData[{
+
 Cell[BoxData[{
  RowBox[{"rvec", "=",
   RowBox[{"{",
