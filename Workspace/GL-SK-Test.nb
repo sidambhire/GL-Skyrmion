@@ -1,0 +1,56 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"A", "=",
+  RowBox[{
+   RowBox[{"\[Pi]",
+    RowBox[{"(",
+     RowBox[{"1", "-",
+      FractionBox[
+       RowBox[{"(",
+        RowBox[{"r", "-",
+         RowBox[{"(",
+          RowBox[{
+           RowBox[{"R", " ", "b"}], "-",
+           FractionBox[
+            RowBox[{"R", " ", "a"}], "2"]}], ")"}]}], ")"}],
+       RowBox[{
+        RowBox[{"(",
+         RowBox[{
+          RowBox[{"R", " ", "b"}], "+",
+          FractionBox[
+           RowBox[{"R", " ", "a"}], "2"]}], ")"}], "-",
+        RowBox[{"(",
+         RowBox[{
+          RowBox[{"R", " ", "b"}], "-",
+          FractionBox[
+           RowBox[{"R", " ", "a"}], "2"]}], ")"}]}]]}], ")"}]}], "//",
+   "FullSimplify"}]}]], "Input"]
+}]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"B", "=",
+  RowBox[{
+   RowBox[{"\[Pi]",
+    RowBox[{"(",
+     RowBox[{"1", "-",
+      FractionBox[
+       RowBox[{"r", "-",
+        RowBox[{"b", " ", "R"}]}],
+       RowBox[{"a", " ", "R"}]]}], ")"}]}], "//", "FullSimplify"}]}]], "Input"]
+}]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"A", "-", "B"}], "//", "FullSimplify"}]], "Input"]
+}]]
+}]
+(* End of Notebook Content *)
